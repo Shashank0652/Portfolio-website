@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Shashank Dhar Dwivedi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="Shashank Resume new.pdf">Resume</a></li>
+                        <li><a href="https://shashankd0652.blogspot.com/">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="main_photo.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Data Analyst</span></h5>
+                    <h1>Shashank Dhar Dwivedi</h1>
+                    <p> Hello! I'm Shashank Dhar Dwivedi, a recent graduate with a Bachelor's in Computer Applications (BCA). Throughout my academic journey, I developed a strong foundation in programming, software development, and problem-solving techniques. However, my passion for data-driven decision-making led me to pursue the exciting field of Data Analytics.
+
+                        I’m currently diving deep into the world of data, learning how to transform raw data into valuable insights using various analytical tools and techniques. With a focus on statistical analysis, data visualization, and machine learning, I'm working towards becoming proficient in tools like Python, SQL, Excel, and Tableau to extract actionable insights from complex datasets.
+                        
+                        As I continue to build my skills in Data Analytics, I am eager to explore the vast opportunities this field has to offer, and contribute my analytical skills to solving real-world problems. I'm always excited to learn and collaborate on projects that challenge my abilities and help me grow professionally!
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="Shashank Resume new.pdf" class="btn active">Download CV</a>
+                       <a href="contact.html" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://wa.me/qr/6C7DZU5QXOOHC1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/shashank-ddhar-dwivedi-180227261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/shashankd0652?igsh=Mm13bzA1aTNpZ3N5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Shashank0652"><i class=" fab fa-github   fa-Githhub "></i></a>
+                        <a href="https://shashankd0652.blogspot.com/"><i class="fa-brands fa-blogger"></i></a>
+    
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Cyber Security Analyst","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
